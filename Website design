@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>علی تفرشی | برنامه‌نویس</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+  background: url('https://i.ibb.co/YTWbNQd/night-nature.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.overlay-light {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.5);
+  animation: rotate 10s linear infinite;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@keyframes rotate {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 100px auto;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #00ffff;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact {
+  margin-top: 30px;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <div class="overlay-light"></div>
+  <div class="container">
+    <img src="profile.jpg" alt="Ali Tafreshi" class="profile-img">
+    <h1>علی تفرشی</h1>
+    <p>دانشجوی مهندسی کامپیوتر، ۱۹ ساله، برنامه‌نویس در شرکت آرین سازه<br>
+    علاقه‌مند به دنیای برنامه‌نویسی و فناوری</p><div class="contact">
+  <p>ایمیل: <a href="mailto:alitafreshi1385@gmail.com">alitafreshi1385@gmail.com</a></p>
+  <p>شماره تماس: <a href="tel:09335181803">09335181803</a></p>
+  <p>اینستاگرام: <a href="https://instagram.com/Alitafreshi" target="_blank">@Alitafreshi</a></p>
+</div>
+
+  </div>
+</body>
+</html>
