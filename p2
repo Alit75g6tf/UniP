@@ -35,3 +35,4 @@ int main(){
     cout << "the avg is : "<<age_calculate.avg_age()<<'\n';
 
     return 0;
+}
