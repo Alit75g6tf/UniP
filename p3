@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+class person{
+    protected:
+    string FirstName;
+    string LastName;
+
+    public:
+    // constructor  برای مقداردهی اولیه هست
+    person(string firstname, string lastname) : FirstName(firstname), LastName(lastname) {}
+
+    void showinfo(){
+        cout << "Name: " << FirstName << " " << LastName << "\n";
+    }
+};
+class Student : public person{
+    private:
+    float Grade;
+
+    public:
+    Student(string firstname , string lastname , float grade) : person(firstname , lastname),Grade(grade){}
+
+     void showstudentinfo(){
+        showinfo();
+        cout << "Grade: " << Grade << "\n";
+     }
+};
+class Teacher : public person{
+    private:
+    float Salary;
+
+    public:
+    Teacher(string firstname , string lastname , float salary) : person(firstname , lastname),Salary(salary){}
+
+    void showteacherinfo(){
+        showinfo();
+        cout << "ali1: " << ali1 << "\n";
+    }
+};
+
+int main(){
+    Student student("ali","mohammad",19.5);
+    Teacher teacher("Mahdi","morteza",15000000);
+
+    cout << "Student Info: "  << "\n";
+    student.showstudentinfo();
+
+    cout << "Teacher Info: " << "\n";
+    teacher.showteacherinfo();
+
+    return 0;
+}
